@@ -23,7 +23,7 @@ export default function DayCard({ day, onSelect, onLocked, isShaking }) {
     <motion.div
       layoutId={`card-${day.id}`}
       onClick={handleClick}
-      className={`relative cursor-pointer rounded-2xl p-5 backdrop-blur-md bg-white/10 border border-white/20 shadow-lg ${day.glowColor} ${!isUnlocked ? "opacity-70 grayscale" : ""}`}
+      className={`relative cursor-pointer rounded-2xl p-4 sm:p-5 backdrop-blur-md bg-white/10 border border-white/20 shadow-lg ${day.glowColor} ${!isUnlocked ? "opacity-70 grayscale" : ""}`}
       whileHover={isUnlocked ? { scale: 1.05, y: -4 } : {}}
       whileTap={isUnlocked ? { scale: 0.97 } : {}}
       animate={
@@ -35,8 +35,8 @@ export default function DayCard({ day, onSelect, onLocked, isShaking }) {
           : { x: 0 }
       }
     >
-      <div className="text-4xl mb-2">{day.emoji}</div>
-      <h3 className="font-heading text-xl text-white font-bold">{day.name}</h3>
+      <div className="text-5xl sm:text-4xl mb-2">{day.emoji}</div>
+      <h3 className="font-heading text-lg sm:text-xl text-white font-bold leading-tight">{day.name}</h3>
       <p className="text-xs text-white/60 mt-1">{formattedDate}</p>
 
       {/* Lock overlay — opaque enough to fully hide card content */}

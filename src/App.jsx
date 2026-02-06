@@ -66,9 +66,9 @@ export default function App() {
     <div className="min-h-dvh bg-gradient-to-br from-rose-950 via-slate-900 to-black relative">
       <FloatingHearts />
 
-      <div className="relative z-10 max-w-2xl mx-auto px-4 py-8 md:py-12">
-        <header className="text-center mb-10">
-          <h1 className="font-heading text-5xl md:text-6xl text-white font-bold mb-2">
+      <div className="relative z-10 max-w-2xl mx-auto px-3 sm:px-4 py-6 md:py-12">
+        <header className="text-center mb-8 sm:mb-10">
+          <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl text-white font-bold mb-2">
             Valentine's Week
           </h1>
           <p className="text-white/50 text-sm">
@@ -76,7 +76,7 @@ export default function App() {
           </p>
         </header>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
           {valentineDays.map((day) => (
             <DayCard
               key={day.id}

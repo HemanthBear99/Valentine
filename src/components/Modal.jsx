@@ -24,9 +24,9 @@ export default function Modal({ day, onClose, children }) {
           {/* Close button — sticky on top */}
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 text-white/60 hover:text-white transition-colors z-10"
+            className="absolute top-3 right-3 w-10 h-10 flex items-center justify-center rounded-full text-white/60 hover:text-white hover:bg-white/10 transition-colors z-10"
           >
-            <X className="w-6 h-6" />
+            <X className="w-5 h-5" />
           </button>
 
           {/* Scrollable inner content */}

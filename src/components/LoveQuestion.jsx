@@ -11,6 +11,7 @@ export default function LoveQuestion({
   accentColor = "rose",
   delay = 0,
   dayName = "",
+  onAnswer = null,
 }) {
   const [answer, setAnswer] = useState(null);
   const { saveAnswer } = useAnswersStore();
@@ -19,6 +20,9 @@ export default function LoveQuestion({
     setAnswer(choice);
     if (dayName) {
       saveAnswer(dayName, question, choice);
+    }
+    if (onAnswer) {
+      onAnswer(choice);
     }
   };
 

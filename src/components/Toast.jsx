@@ -5,7 +5,7 @@ export default function Toast({ message, isVisible }) {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          className="fixed bottom-6 left-1/2 z-[60] px-6 py-3 rounded-full backdrop-blur-md bg-white/15 border border-white/20 text-white text-sm font-medium shadow-lg"
+          className="fixed bottom-6 left-1/2 z-[35] px-6 py-3 rounded-full backdrop-blur-md bg-white/15 border border-white/20 text-white text-sm font-medium shadow-lg"
           style={{ x: "-50%" }}
           initial={{ opacity: 0, y: 50, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
