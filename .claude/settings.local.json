@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "Bash(npm:*)",
+      "Bash(dir:*)",
+      "Bash(npx vite build:*)",
+      "Bash(if not exist \"D:\\\\valentine\\\\public\" mkdir \"D:\\\\valentine\\\\public\")",
+      "Bash(npx vite:*)",
+      "Bash(timeout:*)",
+      "Bash(taskkill:*)",
+      "Bash(powershell -Command \"Get-Process -Name node -ErrorAction SilentlyContinue | Stop-Process -Force\")"
+    ]
+  }
+}
